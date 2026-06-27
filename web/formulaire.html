@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <h3>ISI<span>MARKET</span></h3>
+        <nav>
+            <ul>
+                <li><a>Accueil</a></li>
+                <li><a href="formulaire.html">Deposer</a></li>
+                <li><a href="stats.html">stats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div class="form-body">
+            <div class="titre-form">Formulaire</div>
+            <form id="form-ajout">
+                <div class="form-g">
+                    <label for="titre">titre</label>
+                    <input type="text" class="form-c">
+                </div>
+                <div class="form-g">
+                    <label for="description">description</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <div class="form-g">
+                    <select name="categorie" id="categorie" class="form-c">
+                        <option>categorie</option>
+                        <option value="Livres">Livres</option>
+                        <option value="Materiel">Materiel</option>
+                        <option value="Services">Services</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </div>
+                <div class="form-g">
+                    <label for="titre">prix</label>
+                    <input type="number" class="form-c">
+                </div>
+                <div class="form-g">
+                    <select name="etat" id="etat" class="form-c">
+                        <option>l'etat</option>
+                        <option value="Neuf">Neuf</option>
+                        <option value="Bonetat">Bon état</option>
+                        <option value="Usage">Usagé</option>
+                    </select>
+                </div>
+                <div class="form-g">
+                    <label for="titre">non du vendeur</label>
+                    <input type="text" class="form-c">
+                </div>
+                <div class="form-g">
+                    <label for="contact">contact</label>
+                    <input type="tel" class="form-c">
+                </div>
+                <div class="btn-">
+                    <button  id="btn-depo" class="btn-ajout">Ajouter</button>
+                    <button class="btn-annul">annuler</button>
+                </div>
+            </form>
+            <div>
+                <button type="button" id="btn-prevusia">prevusialisation</button>
+            </div>
+        </div>
+        <div id="preview">
+            <div class="center">
+                <div class="card">
+                   <div class="droit">
+                    <div class="img-card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="titre">
+                        <h4>titre</h4>
+                        <span class="yn">disponible</span>
+                    </div>
+                    <div class="categorie">Categorie : <span class="valeur-categorie">0</span></div>
+                    <div class="prix">prix : <span>0</span></div>
+                    <div>
+                        <span class="nom-vendeur">nom du vendeur</span>
+                        <span class="date">0</span>
+                    </div>
+                </div>
+                    <div>
+                        <button type="button" class="btn-detail">0</button>
+                        <button type="button" class="btn-acheter">0</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h3>&copy; 2026 ISI<span>MARKET</span></h3>
+            <div class="row">
+                <a href="index.html">Accueil</a>
+                <a>Deposer</a>
+                <a href="stats.html">stats</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -10,41 +10,41 @@
         <h3>ISI<span>MARKET</span></h3>
         <nav>
             <ul>
-                <li>Accueil</li>
-                <li>Deposer</li>
-                <li>stats</li>
+                <li><a>Accueil</a></li>
+                <li><a href="formulaire.html">Deposer</a></li>
+                <li><a href="stats.html">stats</a></li>
             </ul>
         </nav>
     </header>
-    <section class="accroche">
+    <section class="section_premier">
         <h1>Bienvenue sur ISI<span>MARKET</span></h1>
         <p>ISI-Market est une plateforme web de petites annonces destinée aux étudiants du Groupe ISI. Elle leur permet
         de déposer, consulter, filtrer et rechercher des annonces portant sur des livres, supports de cours, matériel
         informatique ou services d'entraide académique.</p>
-        <a href="#" class="btn-premier">Deposer une annonce</a>
+        <a href="formulaire.html" class="btn-premier">Deposer une annonce</a>
     </section>
-    <section class="filtre">
+    <section class="section_second">
         <div class="card-filtre">
-            <div class="search-filtre">
-                <input type="search">
+            <div class="search-input">
+                <input type="search" id="search-filtrer">
             </div>
             <div class="select">
-                <select class="select-cat" id="categoris">
+                <select class="select-1" id="categoris">
                     <option>toutes les categoris</option>
                     <option value="Livres">Livres</option>
-                    <option value="Matériel">Matériel</option>
+                    <option value="Materiel">Matériel</option>
                     <option value="Services">Services</option>
                     <option value="Autres">Autres</option>
                 </select>
             </div>
             <div class="select">
-                <select class="select-cat" id="prix">
+                <select class="select-2" id="prix">
                     <option value="Livres">plus ancien</option>
                     <option value="Livres">prix croissant</option>
                     <option value="Matériel">prix decroissant</option>
                 </select>
             </div>
-            <div class="nb-annonce">0 annonce</div>
+            <div class="des-ann"><span class="nb-annonce">0</span>annonce</div>
         </div>
     </section>
     <section class="annonce">
@@ -56,12 +56,33 @@
                     </div>
                     <div class="titre">
                         <h4>titre</h4>
-                        <span>disponible</span>
+                        <span class="yn">disponible</span>
                     </div>
                     <div class="categorie">Categorie : <span class="valeur-categorie">0</span></div>
                     <div class="prix">prix : <span>0</span></div>
                     <span>0</span>
                     <span>0</span>
+                </div>
+                <div>
+                    <button type="button" class="btn-detail">0</button>
+                    <button type="button" class="btn-acheter">0</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="droit">
+                    <div class="img-card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="titre">
+                        <h4>titre</h4>
+                        <span class="yn">disponible</span>
+                    </div>
+                    <div class="categorie">Categorie : <span class="valeur-categorie">0</span></div>
+                    <div class="prix">prix : <span>0</span></div>
+                    <div>
+                        <span class="nom-vendeur">nom du vendeur</span>
+                        <span class="date">0</span>
+                    </div>
                 </div>
                 <div>
                     <button type="button" class="btn-detail">0</button>
@@ -74,9 +95,12 @@
         <div>
             <h3>&copy; 2026 ISI<span>MARKET</span></h3>
             <div class="row">
-                <div>Accueil</div>
-                <div>Deposer</div>
-                <div>stats</div>
+                <a>Accueil</a>
+                <a href="formulaire.html">Deposer</a>
+                <a href="stats.html">stats</a>
+            </div>
+            <div>
+                <h5>fait par le groupe 1</h5>
             </div>
 
         </div>
