@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>ISI-Market - Accueil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h3>ISI<span>MARKET</span></h3>
         <nav>
             <ul>
-                <li><a>Accueil</a></li>
-                <li><a href="formulaire.html">Deposer</a></li>
-                <li><a href="stats.html">stats</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formulaire.html">Déposer</a></li>
+                <li><a href="stats.html">Stats</a></li>
             </ul>
         </nav>
     </header>
     <section class="section_premier">
         <h1>Bienvenue sur ISI<span>MARKET</span></h1>
-        <p>ISI-Market est une plateforme web de petites annonces destinée aux étudiants du Groupe ISI. Elle leur permet
-        de déposer, consulter, filtrer et rechercher des annonces portant sur des livres, supports de cours, matériel
-        informatique ou services d'entraide académique.</p>
-        <a href="formulaire.html" class="btn-premier">Deposer une annonce</a>
+        <p>ISI-Market est une plateforme web de petites annonces destinée aux étudiants du Groupe ISI. Elle leur permet de déposer, consulter, filtrer et rechercher des annonces portant sur des livres, supports de cours, matériel informatique ou services d'entraide académique.</p>
+        <a href="formulaire.html" class="btn-premier">Déposer une annonce</a>
     </section>
     <section class="section_second">
         <div class="card-filtre">
             <div class="search-input">
-                <input type="search" id="search-filtrer">
+                <input type="search" id="recherche" placeholder="Rechercher une annonce...">
             </div>
             <div class="select">
-                <select class="select-1" id="categoris">
-                    <option>toutes les categoris</option>
+                <select id="categorieFiltre">
+                    <option value="toutes">Toutes les catégories</option>
                     <option value="Livres">Livres</option>
                     <option value="Materiel">Matériel</option>
                     <option value="Services">Services</option>
@@ -38,66 +37,28 @@
                 </select>
             </div>
             <div class="select">
-                <select class="select-2" id="prix">
-                    <option value="Livres">plus ancien</option>
-                    <option value="Livres">prix croissant</option>
-                    <option value="Matériel">prix decroissant</option>
+                <select id="tri">
+                    <option value="date">Plus récent</option>
+                    <option value="prix-croissant">Prix croissant</option>
+                    <option value="prix-decroissant">Prix décroissant</option>
                 </select>
             </div>
-            <div class="des-ann"><span class="nb-annonce">0</span>annonce</div>
+            <div class="des-ann">
+                <span id="compteur-annonces">0</span> annonce(s)
+            </div>
         </div>
     </section>
     <section class="annonce">
-        <div class="container">
-            <div class="card">
-                <div class="droit">
-                    <div class="img-card">
-                        <img src="" alt="">
-                    </div>
-                    <div class="titre">
-                        <h4>titre</h4>
-                        <span class="yn">disponible</span>
-                    </div>
-                    <div class="categorie">Categorie : <span class="valeur-categorie">0</span></div>
-                    <div class="prix">prix : <span>0</span></div>
-                    <span>0</span>
-                    <span>0</span>
-                </div>
-                <div>
-                    <button type="button" class="btn-detail">0</button>
-                    <button type="button" class="btn-acheter">0</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="droit">
-                    <div class="img-card">
-                        <img src="" alt="">
-                    </div>
-                    <div class="titre">
-                        <h4>titre</h4>
-                        <span class="yn">disponible</span>
-                    </div>
-                    <div class="categorie">Categorie : <span class="valeur-categorie">0</span></div>
-                    <div class="prix">prix : <span>0</span></div>
-                    <div>
-                        <span class="nom-vendeur">nom du vendeur</span>
-                        <span class="date">0</span>
-                    </div>
-                </div>
-                <div>
-                    <button type="button" class="btn-detail">0</button>
-                    <button type="button" class="btn-acheter">0</button>
-                </div>
-            </div>
+        <div class="container" id="grille-annonces">
         </div>
     </section>
     <footer>
         <div>
             <h3>&copy; 2026 ISI<span>MARKET</span></h3>
             <div class="row">
-                <a>Accueil</a>
-                <a href="formulaire.html">Deposer</a>
-                <a href="stats.html">stats</a>
+                <a href="index.html">Accueil</a>
+                <a href="formulaire.html">Déposer</a>
+                <a href="stats.html">Stats</a>
             </div>
             <div>
                 <h5>fait par le groupe 1</h5>
@@ -105,6 +66,6 @@
 
         </div>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
